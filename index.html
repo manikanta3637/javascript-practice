@@ -3,13 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>functions</title>
-
+    <title>table</title>
+    <link rel="stylesheet" href="">
+    <!-- <style>
+        .image img{
+           height: 100px;
+           width: 100px;
+           border-radius: 50%;
+        }
+        
+    </style> -->
 </head>
 <body>
+    <!-- <table>
+        <tr>
+            <td class="image">
+                <img src="./assets/luffy.jpeg" alt="">
+            </td>
+            <td class="image">
+                <img src="./assets/ace.jpg" alt="">
+            </td>
+            <td class="image">
+                <img src="./assets/sabo.jpeg" alt="">
+            </td>
+
+        </tr>
+        <tr>
+          <td>S.NO,G.NO</td>
+
+        </tr>
+        <tr>
+            <td>NAME,GAME</td>
+
+        </tr>
+        <tr>
+            <td>EMAIL ID</td>
+        </tr>
+        <tr>
+            <td>CONTACT DETAILS</td>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+        </tr>
+    </table> -->
     
-    <script src="./index.js">
-        
-    </script>
 </body>
+
+<script>
+      
+    //   creating table
+          
+    let table = document.createElement("table");
+    document.body.appendChild(table);
+
+        // 1st row and data
+       
+    let tr1 = document.createElement('tr');
+    table.appendChild(tr1);
+
+    let td1 = document.createElement('td');
+    td1 .setAttribute('class','image');
+    tr1.appendChild(td1);
+    let image1 = document.createElement('img');
+    image1.setAttribute('src','./assets/luffy.jpeg');
+    td1.appendChild(image1);
+    image1.setAttribute("style", "width: 100px; height: 100px; border: 2px solid black; border-radius:50%");
+    
+
+    let td2 = document.createElement('td');
+    td2.setAttribute('class','image');
+    tr1.appendChild(td2)
+    let image2 = document.createElement('img');
+    image2.setAttribute('src','./assets/ace.jpg');
+    td2.appendChild(image2);
+    image2.setAttribute("style", "width: 100px; height: 100px; border: 2px solid black; border-radius:50%");
+    
+
+    let td3=document.createElement('td');
+    td3.setAttribute('class','image');
+    tr1.appendChild(td3);
+    let image3=document.createElement('img');
+    image3.setAttribute('src','./assets/sabo.jpeg');
+    td3.appendChild(image3);
+    image3.setAttribute("style", "width: 100px; height: 100px; border: 2px solid black; border-radius:50%");
+    
+
+        // 2nd row and data
+                   
+    let tr2=document.createElement('tr');
+    table.appendChild(tr2);
+
+    let td01=document.createElement('td');
+    tr2.appendChild(td01);
+    let sno1= document.createTextNode('S.NO');
+    td01.appendChild(sno1);
+
+    let td02=document.createElement('td');
+    tr2.appendChild(td02);
+    let name1 = document.createTextNode('NAME');
+    td02.appendChild(name1);
+
+    let td03= document.createElement('td');
+    tr2.appendChild(td03);
+    let email1 = document.createTextNode('EMAIL-ID');
+    td03.appendChild(email1);
+
+    let td04=document.createElement('td');
+    tr2.appendChild(td04);
+    let cd1 = document.createTextNode('CONTACT-NO');
+    td04.appendChild(cd1);
+
+    let td05=document.createElement('td');
+    tr2.appendChild(td05);
+    let add1 = document.createTextNode('ADDRESS');
+    td05.appendChild(add1);
+
+    //    3rd row and data
+
+    let tr3=document.createElement('tr');
+    table.appendChild(tr3);
+
+    let td001=document.createElement('td');
+    tr3.appendChild(td001);
+    let sno2= document.createTextNode('1');
+    td001.appendChild(sno2);
+
+    let td002=document.createElement('td');
+    tr3.appendChild(td002);
+    let name2 = document.createTextNode('venkat');
+    td002.appendChild(name2);
+
+    let td003= document.createElement('td');
+    tr3.appendChild(td003);
+    let email2 = document.createTextNode('venkat@gmail.com');
+    td003.appendChild(email2);
+
+    let td004=document.createElement('td');
+    tr3.appendChild(td004);
+    let cd2 = document.createTextNode('9364846399');
+    td004.appendChild(cd2);
+
+    let td005=document.createElement('td');
+    tr3.appendChild(td005);
+    let add2 = document.createTextNode('macherla');
+    td005.appendChild(add2);
+
+    //    4th row and data
+
+    let tr4=document.createElement('tr');
+    table.appendChild(tr4);
+
+    let td0001=document.createElement('td');
+    tr4.appendChild(td0001);
+    let sno3= document.createTextNode('2');
+    td0001.appendChild(sno3);
+
+    let td0002=document.createElement('td');
+    tr4.appendChild(td0002);
+    let name3 = document.createTextNode('jeevam');
+    td0002.appendChild(name3);
+
+    let td0003= document.createElement('td');
+    tr4.appendChild(td0003);
+    let email3 = document.createTextNode('jeevam@gmail.com');
+    td0003.appendChild(email3);
+
+    let td0004=document.createElement('td');
+    tr4.appendChild(td0004);
+    let cd3 = document.createTextNode('993648469');
+    td0004.appendChild(cd3);
+
+    let td0005=document.createElement('td');
+    tr4.appendChild(td0005);
+    let add3 = document.createTextNode('bapatla');
+    td0005.appendChild(add3);
+    
+    //    5th row and data
+
+    let tr5=document.createElement('tr');
+    table.appendChild(tr5);
+
+    let td00001=document.createElement('td');
+    tr5.appendChild(td00001);
+    let sno4= document.createTextNode('3');
+    td00001.appendChild(sno4);
+
+    let td00002=document.createElement('td');
+    tr5.appendChild(td00002);
+    let name4 = document.createTextNode('vishnu');
+    td00002.appendChild(name4);
+
+    let td00003= document.createElement('td');
+    tr5.appendChild(td00003);
+    let email4 = document.createTextNode('vishnu@gmail.com');
+    td00003.appendChild(email4);
+
+    let td00004=document.createElement('td');
+    tr5.appendChild(td00004);
+    let cd4 = document.createTextNode('7568353827');
+    td00004.appendChild(cd4);
+
+    let td00005=document.createElement('td');
+    tr5.appendChild(td00005);
+    let add5 = document.createTextNode('hyderabad');
+    td00005.appendChild(add5);
+
+
+     let allCells = document.querySelectorAll('td');
+allCells.forEach(cell => {
+  cell.style.border = '1px solid black';
+  cell.style.padding = '8px';
+});
+
+
+
+
+
+
+</script>
 </html>
